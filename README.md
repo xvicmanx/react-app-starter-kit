@@ -2,8 +2,6 @@
 
 A boiler plate project to start coding your React application right away.
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
 ### Things this kit includes
 
 * [EditorConfig](http://editorconfig.org/) to maintain consinstency in code style among different editors. See the `.editorconfig` file to customize the configuration.
