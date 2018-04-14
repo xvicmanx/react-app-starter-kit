@@ -48,9 +48,9 @@ In order to test your code run the following command:
 npm test
 ```
 
-## Deployment
+<!-- ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Add additional notes about how to deploy this on a live system -->
 
 ## Contributing
 
@@ -59,7 +59,7 @@ Feel free to make any suggestion to improve this project.
 
 ## Authors
 
-See the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See the list of [contributors](https://github.com/xvicmanx/react-app-starter-kit/graphs/contributors) who participated in this project.
 
 ## License
 
