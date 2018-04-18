@@ -33,7 +33,8 @@ See the `scripts/share-development.js` for more details.
 To get started it is only necessary to clone this repository, install all the dependencies and start your server.
 
 ```
-  git clone https://github.com/xvicmanx/react-lazy-responsive-image
+  git clone https://github.com/xvicmanx/react-app-starter-kit
+
   npm install
   npm start
 ```
@@ -48,9 +49,29 @@ In order to test your code run the following command:
 npm test
 ```
 
-<!-- ## Deployment
+## Building your app
 
-Add additional notes about how to deploy this on a live system -->
+In order to build your app run the following command: 
+```bash
+npm run build
+```
+
+The building process will minify, optimize and bundle the assets for production. I will generate static HTML from your React app and inject the critical rendering CSS.
+
+Optionally, to serve the built app run the command: 
+```bash
+npm run serve:build
+```
+
+## Share your development progress
+
+While developing your app, you can share your progress by creating a localtunnel to your app by running the following command: 
+```bash
+npm run start-and-share:development
+```
+
+This will create a random url to access your app.
+
 
 ## Contributing
 
@@ -59,7 +80,7 @@ Feel free to make any suggestion to improve this project.
 
 ## Authors
 
-See the list of [contributors](https://github.com/xvicmanx/react-app-starter-kit/graphs/contributors) who participated in this project.
+See the list of [contributors](https://github.com/xvicmanx/react-app-starter-kit/contributors) who participated in this project.
 
 ## License
 

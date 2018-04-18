@@ -21,7 +21,7 @@
     "clean": "rimraf ./build && mkdir build",
     "prebuild": "npm-run-all clean test lint",
     "build": "npm-run-all build:assets generate:static-html generate:critical",
-    "postbuild": "babel-node scripts/serve-build.js"
+    "serve:build": "babel-node scripts/serve-build.js"
   },
   "keywords": [
     "React",
