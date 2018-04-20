@@ -3,7 +3,7 @@ import placeholder from './assets/placeholder.png';
 
 const App = () => (
   <div>
-    <h1>Hello, world!</h1>
+    <h1 className="App__title">Hello, world!</h1>
     <img src={placeholder} alt="placeholder" />
   </div>
 );
