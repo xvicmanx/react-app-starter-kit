@@ -26,6 +26,8 @@ See the `scripts/share-development.js` for more details.
 
 * [React-snapshot](https://github.com/geelen/react-snapshot) to convert the React Code to html.
 
+* [Docker](https://www.docker.com/) to run your application in development in a virtualized environment.
+
 
 
 ## Getting Started
