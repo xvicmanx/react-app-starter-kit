@@ -22,6 +22,8 @@ See the `scripts/share-development.js` for more details.
 
 * [Jest](https://facebook.github.io/jest/) to test the code being developed.
 
+* [Puppeteer](https://github.com/GoogleChrome/puppeteer) to create and run E2E tests.
+
 * [Critical](https://github.com/addyosmani/critical) to extract the critical path CSS  and inject it into  the HTML. See the `config/critical.config.js` to customize the extraction process and more details.
 
 * [React-snapshot](https://github.com/geelen/react-snapshot) to convert the React Code to html.
@@ -60,6 +62,13 @@ In order to test your code run the following command:
 ```bash
 npm test
 ```
+
+### Running E2E tests
+  In order to run your e2e tests: 
+  ```bash
+  npm run test:e2e
+  ```
+
 
 ## Building your app
 
