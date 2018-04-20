@@ -40,6 +40,16 @@ To get started it is only necessary to clone this repository, install all the de
 ```
 
 
+## Getting Started with Docker/Docker Compose
+
+If you want to get started running your app in development in Docker using Docker Compose, do the following:
+
+```
+  git clone https://github.com/xvicmanx/react-app-starter-kit
+  docker-compose build
+  docker-compose up
+```
+
 ## Running the tests
 
 To test the code [Jest](https://facebook.github.io/jest/) is being used.
