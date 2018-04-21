@@ -3,6 +3,8 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import OfflinePlugin from 'offline-plugin';
 
 const DEVELOPMENT_MODE = 'development';
 const mode = process.env.NODE_ENV || DEVELOPMENT_MODE;
@@ -26,6 +28,25 @@ if (!inDevelopment()) {
 }
 
 const plugins = [
+  new OfflinePlugin({
+    externals: ['/'],
+    ServiceWorker: {
+      minify: false,
+      scope: '/',
+    },
+    AppCache: null,
+  }),
+  new CopyWebpackPlugin(
+    [
+      {
+        from: path.resolve(__dirname, '../public/**/*'),
+        to: path.resolve(__dirname, '../build'),
+        ignore: ['*.html'],
+        flatten: true,
+      },
+    ],
+    {},
+  ),
   new HtmlWebpackPlugin(Object.assign(
     {},
     {

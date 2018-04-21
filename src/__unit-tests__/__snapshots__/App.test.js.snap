@@ -11,5 +11,30 @@ exports[`The app renders correctly 1`] = `
     alt="placeholder"
     src="placeholder.png"
   />
+  <div>
+    Icons made by 
+    <a
+      href="https://www.flaticon.com/authors/those-icons"
+      title="Those Icons"
+    >
+      Those Icons
+    </a>
+     from 
+    <a
+      href="https://www.flaticon.com/"
+      title="Flaticon"
+    >
+      www.flaticon.com
+    </a>
+     is licensed by 
+    <a
+      href="http://creativecommons.org/licenses/by/3.0/"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Creative Commons BY 3.0"
+    >
+      CC 3.0 BY
+    </a>
+  </div>
 </div>
 `;
