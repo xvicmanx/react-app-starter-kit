@@ -93,6 +93,25 @@ npm run start-and-share:development
 
 This will create a random url to access your app.
 
+## Converting your app into a Progressive Web App
+
+The project is configured to convert your app into a PWA (Progressive Web App).
+To customize it you can either modify the assets files of your app, located in the public folder or generate them using the tool [Real Favicon Generator](https://realfavicongenerator.net/) to generate the files and replace those public assets with the generated ones.
+
+
+In order to evaluate the performance of your application and get tips of how to improve it use `lighthouse`. You can either installed in your browser as an extension or simply running the following commands:
+
+```bash
+npm run build
+
+npm run serve:build
+
+npm pwa-report:build
+
+```
+
+The two last commands should be run in different terminals.
+
 
 ## Contributing
 
