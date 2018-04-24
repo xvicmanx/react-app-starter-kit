@@ -24,7 +24,7 @@
     "prebuild": "npm-run-all clean test lint",
     "build": "npm-run-all build:assets generate:static-html generate:critical",
     "postbuild": "babel-node scripts/minify-service-worker.js",
-    "serve:build": "babel-node scripts/serve-build.js",
+    "serve:build": "NODE_ENV=production babel-node scripts/serve-build.js",
     "pwa-report": "mkdirp .tmp && lighthouse --view --output html --output-path ./.tmp/report.html",
     "pwa-report:build": "npm run pwa-report http://localhost:3001"
   },
