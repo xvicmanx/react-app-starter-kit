@@ -4,7 +4,7 @@
   "description": "A starter kit for developing React apps",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel start:dev-server lint:watch check:security test:watch",
+    "start": "npm-run-all --parallel start:dev-server lint:watch test:watch",
     "lint": "esw --color src/ scripts/",
     "lint:watch": "npm run lint -- --watch",
     "check:security": "nsp check --reporter summary",
