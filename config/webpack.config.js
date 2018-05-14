@@ -1,10 +1,12 @@
-import path from 'path';
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import WebpackMd5Hash from 'webpack-md5-hash';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import OfflinePlugin from 'offline-plugin';
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackMd5Hash = require('webpack-md5-hash');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
+
+require('dotenv').config();
 
 const DEVELOPMENT_MODE = 'development';
 const mode = process.env.NODE_ENV || DEVELOPMENT_MODE;
@@ -131,4 +133,9 @@ module.exports = {
     ],
   },
   plugins,
+  devServer: {
+    contentBase: path.join(__dirname, '..', 'public'),
+    compress: true,
+    port: process.env.PORT || 3000,
+  },
 };
