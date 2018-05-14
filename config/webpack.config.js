@@ -5,6 +5,7 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 
 require('dotenv').config();
 
@@ -57,6 +58,7 @@ const plugins = [
     },
     HTML_PLUGIN_OPTIONS_EXTRA,
   )),
+  new ErrorOverlayPlugin(),
 ];
 
 let CSS_RULE = {
@@ -103,13 +105,16 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx?$/i,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
             babelrc: true,
           },
+        },
+        resolve: {
+          extensions: ['.js', '.jsx', '.es6'],
         },
       },
       CSS_RULE,
