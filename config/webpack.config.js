@@ -101,7 +101,6 @@ module.exports = {
   mode,
   target: 'web',
   devtool: inDevelopment() ? 'inline-source-map' : 'source-map',
-  stats: 'errors-only',
   module: {
     rules: [
       {
@@ -142,5 +141,6 @@ module.exports = {
     contentBase: path.join(__dirname, '..', 'public'),
     compress: true,
     port: process.env.PORT || 3000,
+    stats: 'errors-only',
   },
 };
