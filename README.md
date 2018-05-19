@@ -10,8 +10,6 @@ A boiler plate project to start coding your React application right away.
 
 * [Webpack](https://webpack.js.org/) to bundle the modules and assets. See the `webpack.config.*.js` files to customize the configuration.
 
-* [ExpressJS](https://expressjs.com/) to serve our app in development mode. See the `scripts/start-server.js` for more details.
-
 * [NSP](https://nodesecurity.io/) to check for any vulnerabilities in the dependencies.
 
 
